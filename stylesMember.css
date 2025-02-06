@@ -47,7 +47,8 @@ body {
         padding: 20px;
         background-color: #d4edda;
         border-radius: 8px;
-        margin-left: -200px;
+        margin-left: -250px;
+        margin-right: -25px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
@@ -201,7 +202,7 @@ h2 {
 @media (max-width: 600px) {
     h2 {
         text-align: left; /* Align text to the left on mobile */
-        margin-left: -150px; /* Adjust this value to shift the text left more */
+        margin-left: -180px; /* Adjust this value to shift the text left more */
     }
 }
 
@@ -257,6 +258,7 @@ h2 {
     .sign-out-btn {
         right: 10px; /* Shift the button further to the right on mobile */
         padding: 8px; /* Make the button slightly smaller */
+        top: 10px;
     }
 }
 
@@ -349,7 +351,7 @@ margin-top: 20px;
 @media (max-width: 600px) {
     table {
         margin: 0; /* Remove auto-centering */
-        margin-left: -200px; /* Move table to the left */
+        margin-left: -250px; /* Move table to the left */
         width: 100%; /* Ensure it still takes full width */
     }
 }
@@ -887,5 +889,22 @@ h4 {
     }
 }
 
+/* Styled Delete Icon */
+.delete-btns {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
 
+.delete-btns i {
+    color: #100f0f; /* Red color */
+}
+
+.delete-btns:hover i {
+    color: #111010; /* Darker Red on Hover */
+    transform: scale(1.2); /* Slight Zoom Effect */
+}
 
