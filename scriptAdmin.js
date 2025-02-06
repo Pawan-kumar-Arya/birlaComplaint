@@ -1279,7 +1279,7 @@ function deleteApprovedStaff(key) {
        const mobile_no = document.getElementById('staff-contact').value;
        const password = document.getElementById('password').value;
    
-       const staffData = { name, gender, department, designation, email, mobile_no, password };
+       const staffData = { name, gender, department, designation, email, mobile_no};
    
        // Save the data to local storage
        const existingStaff = JSON.parse(localStorage.getItem('staff')) || [];
