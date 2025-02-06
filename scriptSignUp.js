@@ -460,8 +460,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
                                 const name = document.getElementById('staff-name').value;
                                 const gender = document.querySelector('input[name="gender"]:checked').value;
-                                const department = document.getElementById('department').value;
-                                const designation = document.getElementById('designation').value;
+                                const department = document.getElementById('staff-department').value;
+                                const designation = document.getElementById('staff-designation').value;
             
                                 const staffData = {
                                     uid: user.uid, 
