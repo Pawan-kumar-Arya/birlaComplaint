@@ -431,7 +431,7 @@ document.getElementById('add-member-form').addEventListener('submit', async func
                     name: name,
                     gender: gender,
                     designation: designation,
-                    password: password,
+                 
                     email: email,
                     contact: contact,
                     isLoggedIn: false
@@ -1222,7 +1222,7 @@ const email = document.getElementById('email').value;
 const mobile_no = document.getElementById('contact-number').value;
 const password = document.getElementById('password').value;
 
-const studentData = { name, gender, course, batch, roll_no, email, mobile_no,password };
+const studentData = { name, gender, course, batch, roll_no, email, mobile_no};
 
 // Save the data to local storage
 const existingStudents = JSON.parse(localStorage.getItem('students')) || [];
@@ -1251,7 +1251,7 @@ const email = document.getElementById('teacher-email').value;
 const mobile_no = document.getElementById('teacher-contact').value;
 const password = document.getElementById('password').value;
 
-const teacherData = { name, gender, department, designation, email, mobile_no, password };
+const teacherData = { name, gender, department, designation, email, mobile_no };
 
 // Save the data to local storage
 const existingTeachers = JSON.parse(localStorage.getItem('teachers')) || [];
@@ -1279,7 +1279,7 @@ const email = document.getElementById('staff-email').value;
 const mobile_no = document.getElementById('staff-contact').value;
 const password = document.getElementById('password').value;
 
-const staffData = { name, gender, department, designation, email, mobile_no, password };
+const staffData = { name, gender, department, designation, email, mobile_no };
 
 // Save the data to local storage
 const existingStaff = JSON.parse(localStorage.getItem('staff')) || [];
