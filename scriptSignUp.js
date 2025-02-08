@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                                 const studentData = {
                                     uid: user.uid, // Store UID as the unique key
-                                    name, gender, course, password, batch, roll_no: rollNo, email, mobile_no: mobileNo, role: 'student'
+                                    name, gender, course, batch, roll_no: rollNo, email, mobile_no: mobileNo, role: 'student'
                                 };
             
                                 await set(ref(database, 'students/' + user.uid), studentData);
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                                 const teacherData = {
                                     uid: user.uid, 
-                                    name, gender, department, password: teacherPassword, designation, email: teacherEmail, mobile_no: teacherMobileNo, role: 'teacher'
+                                    name, gender, department,  designation, email: teacherEmail, mobile_no: teacherMobileNo, role: 'teacher'
                                 };
             
                                 await set(ref(database, 'teachers/' + user.uid), teacherData);
@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
                                 const staffData = {
                                     uid: user.uid, 
-                                     name, gender, department, designation, email: staffEmail, mobile_no: staffMobileNo, role: 'staff', password 
+                                     name, gender, department, designation, email: staffEmail, mobile_no: staffMobileNo, role: 'staff'
                                 };
             
                                 await set(ref(database, 'staff/' + user.uid), staffData);
