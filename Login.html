@@ -10,10 +10,11 @@
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    alert("Access denied. Please enter index.html in the browser’s address bar to access it properly.");
+    alert("This page cannot be accessed directly. So we are redirecting to you to the main page.");
       window.location.href = "index.html";
   }
     </script>
+
 
 
 
