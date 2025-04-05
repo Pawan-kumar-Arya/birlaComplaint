@@ -11,20 +11,11 @@
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    // Create a delay function using a promise
-    function delay(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
+    while (true) {
+      alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
     }
-
-    // Use an async IIFE to allow await inside the while loop
-    (async function () {
-      while (true) {
-        alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
-        await delay(3000); // Wait for 3 seconds before showing the next alert
-      }
-    })();
   }
-</script>
+    </script>
 
 
     
