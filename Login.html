@@ -9,7 +9,9 @@
 
   if (!cameFromIndex) {
     while (true) {
+      setInterval(() => {
       alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
+    }, 3000); // 3000 milliseconds = 3 seconds
     }
   }
 </script>
