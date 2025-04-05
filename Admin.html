@@ -3,6 +3,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+    <script>
+  // Check if the user accessed this page directly (not from index.html)
+  const ref = document.referrer;
+  const origin = location.origin;
+
+  const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
+
+  if (!cameFromIndex) {
+    alert("This page cannot be accessed directly. So we are redirecting to you to the main page.");
+      window.location.href = "index.html";
+  }
+    </script>
+
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <meta charset="UTF-8">
