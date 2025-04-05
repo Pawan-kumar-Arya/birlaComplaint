@@ -8,13 +8,11 @@
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    // Run an async infinite loop that waits between alerts
-    (async function showAlertLoop() {
       while (true) {
         alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
-        await new Promise(resolve => setTimeout(resolve, 3000)); // wait for 3 seconds
+    
       }
-    })();
+    }
   }
 </script>
 
