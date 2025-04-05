@@ -7,11 +7,13 @@
   const origin = location.origin;
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
-  if (!cameFromIndex) {
+  if (!cameFromIndex && !sessionStorage.getItem("loginAlertShown")) {
     alert("Access Denied! Please go to index.html first.");
-}
-        location.reload(); // Refresh the page
+    sessionStorage.setItem("loginAlertShown", "true");
+    location.reload();
+  }
 </script>
+
 
 
 
