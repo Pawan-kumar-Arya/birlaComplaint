@@ -20,7 +20,7 @@ const database = getDatabase(app);
 const auth = getAuth();
 
 // Protect the page
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, (userType) => {
     if (!userType) {
       // Not logged in? Redirect to login page
       window.location.href = "index.html";
