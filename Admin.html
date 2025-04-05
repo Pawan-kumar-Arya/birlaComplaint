@@ -6,15 +6,15 @@
 
 
     <script>
-  // Check if the user accessed this page directly (not from index.html)
+  //<script>
   const ref = document.referrer;
   const origin = location.origin;
-
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    alert("This page cannot be accessed directly. So we are redirecting to you to the main page.");
-      window.location.href = "index.html";
+    while (true) {
+      alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
+    }
   }
     </script>
 
