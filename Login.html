@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
 
-    <script>
+<script>
   const ref = document.referrer;
   const origin = location.origin;
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-      while (true) {
-        alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
-    
-      }
+    while (true) {
+      alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
     }
   }
 </script>
+
 
 
 
