@@ -3,17 +3,17 @@
 <head>
 
     <script>
-  // Check if the user accessed this page directly (not from index.html)
   const ref = document.referrer;
   const origin = location.origin;
-
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
     alert("Access Denied! Please go to index.html first.");
-      window.location.href = "index.html";
+    // Optional: freeze page
+    document.documentElement.innerHTML = "";
   }
 </script>
+
 
 
 
