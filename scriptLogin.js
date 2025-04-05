@@ -23,7 +23,7 @@ const auth = getAuth();
   onAuthStateChanged(auth, (user) => {
     if (!user) {
       // Not logged in? Redirect to login page
-      window.location.href = "login.html";
+      window.location.href = "Index.html";
     }
   });
 
