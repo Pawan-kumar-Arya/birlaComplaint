@@ -3,24 +3,17 @@
 <head>
 
     <script>
+  // Check if the user accessed this page directly (not from index.html)
   const ref = document.referrer;
   const origin = location.origin;
+
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    alert("Access denied.");
-
-    // Replace the page content with your custom message
-    document.body.innerHTML = `
-      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-family: Arial, sans-serif;">
-        <div>
-          <h2>This page cannot be accessed directly.</h2>
-          <p>Please enter <strong>index.html</strong> in the browser’s address bar to access it properly.</p>
-        </div>
-      </div>
-    `;
+    alert("Access denied. Please enter index.html in the browser’s address bar to access it properly.");
+      window.location.href = "index.html";
   }
-</script>
+    </script>
 
 
 
