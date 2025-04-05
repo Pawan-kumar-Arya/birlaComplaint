@@ -8,9 +8,9 @@
   const cameFromIndex = ref === origin + "/" || ref === origin + "/index.html";
 
   if (!cameFromIndex) {
-    setInterval(() => {
+    
       alert("Access denied. Please enter index.html in the browser's address bar to access it properly.");
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }// 3000 milliseconds = 3 seconds
   }
 </script>
 
