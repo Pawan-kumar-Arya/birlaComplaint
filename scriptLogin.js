@@ -19,13 +19,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
-// Protect the page
-  onAuthStateChanged(auth, (user) => {
-    if (!user) {
-      // Not logged in? Redirect to login page
-      window.location.href = "index.html";
-    }
-  });
+
 
 
 function showSection(sectionId) {
